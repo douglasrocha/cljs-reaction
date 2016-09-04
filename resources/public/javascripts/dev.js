@@ -28,4 +28,5 @@ goog.addDependency("../cljs_reaction/login_form.js", ['cljs_reaction.login_form'
 goog.addDependency("../cljs_reaction/title.js", ['cljs_reaction.title'], ['reagent.core', 'cljs.core', 'cljs.core.async']);
 goog.addDependency("../cljs_reaction/radio_button.js", ['cljs_reaction.radio_button'], ['reagent.core', 'cljs.core', 'cljs.core.async']);
 goog.addDependency("../cljs_reaction/article.js", ['cljs_reaction.article'], ['reagent.core', 'cljs.core', 'cljs.core.async']);
-goog.addDependency("../cljs_reaction/core.js", ['cljs_reaction.core'], ['cljs_reaction.login_form', 'reagent.core', 'cljs.core', 'cljs.core.async', 'cljs_reaction.title', 'cljs_reaction.radio_button', 'cljs_reaction.article']);
+goog.addDependency("../cljs_reaction/checkbox.js", ['cljs_reaction.checkbox'], ['reagent.core', 'cljs.core', 'cljs.core.async']);
+goog.addDependency("../cljs_reaction/core.js", ['cljs_reaction.core'], ['cljs_reaction.login_form', 'reagent.core', 'cljs.core', 'cljs.core.async', 'cljs_reaction.title', 'cljs_reaction.radio_button', 'cljs_reaction.article', 'cljs_reaction.checkbox']);

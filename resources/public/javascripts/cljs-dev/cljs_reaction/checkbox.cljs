@@ -1,12 +1,12 @@
-(ns cljs-reaction.radio-button
+(ns cljs-reaction.checkbox
     (:require-macros [cljs.core.async.macros :refer (go)])
     (:require [reagent.core :as reagent]
               [cljs.core.async :refer (chan put! <!)]))
 
-(defn radio-button [*html* *value*]
-    [:div {:class "r-radio-button"}
-          [:input {:class "r-radio-input"
-                   :type :radio
+(defn checkbox [*html* *value*]
+    [:div {:class "r-checkbox"}
+          [:input {:class "r-checkbox-input"
+                   :type :checkbox
                    :value *value*}]
-          [:label {:class "r-radio-label"}
+          [:label {:class "r-checkbox-label"}
                   *html*]])

@@ -4,8 +4,8 @@
               [cljs.core.async :refer (chan put! <!)]))
 
 (defn radio-button [*html* *value*]
-    [:div {}
-          [:input {:class "r-radio-button"
+    [:div {:class "r-radio-button"}
+          [:input {:class "r-radio-input"
                    :type :radio
                    :value *value*}]
           [:label {:class "r-radio-label"}
