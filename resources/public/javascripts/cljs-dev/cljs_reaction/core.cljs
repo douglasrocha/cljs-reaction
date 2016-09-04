@@ -10,7 +10,11 @@
         [title
             "Clojurescript Reaction"
             "Welcome to the best clojurescript components' library using reagent"]
-        [login-form "Please sign in"]])
+        [login-form "Please sign in"
+                    "Username:"
+                    "Username"
+                    "Password:"
+                    "Password"]])
 
 (reagent/render [app]
     (js/document.querySelector "#cljs-target"))

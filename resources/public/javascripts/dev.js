@@ -23,6 +23,7 @@ goog.addDependency("../cljs/core/async/impl/channels.js", ['cljs.core.async.impl
 goog.addDependency("../cljs/core/async/impl/ioc_helpers.js", ['cljs.core.async.impl.ioc_helpers'], ['cljs.core', 'cljs.core.async.impl.protocols']);
 goog.addDependency("../cljs/core/async/impl/timers.js", ['cljs.core.async.impl.timers'], ['cljs.core.async.impl.channels', 'cljs.core.async.impl.dispatch', 'cljs.core', 'cljs.core.async.impl.protocols']);
 goog.addDependency("../cljs/core/async.js", ['cljs.core.async'], ['cljs.core.async.impl.channels', 'cljs.core.async.impl.dispatch', 'cljs.core', 'cljs.core.async.impl.buffers', 'cljs.core.async.impl.protocols', 'cljs.core.async.impl.ioc_helpers', 'cljs.core.async.impl.timers']);
-goog.addDependency("../cljs_reaction/login_form.js", ['cljs_reaction.login_form'], ['reagent.core', 'cljs.core', 'cljs.core.async']);
+goog.addDependency("../cljs_reaction/text_field.js", ['cljs_reaction.text_field'], ['reagent.core', 'cljs.core', 'cljs.core.async']);
+goog.addDependency("../cljs_reaction/login_form.js", ['cljs_reaction.login_form'], ['reagent.core', 'cljs.core', 'cljs.core.async', 'cljs_reaction.text_field']);
 goog.addDependency("../cljs_reaction/title.js", ['cljs_reaction.title'], ['reagent.core', 'cljs.core', 'cljs.core.async']);
 goog.addDependency("../cljs_reaction/core.js", ['cljs_reaction.core'], ['cljs_reaction.login_form', 'reagent.core', 'cljs.core', 'cljs.core.async', 'cljs_reaction.title']);
