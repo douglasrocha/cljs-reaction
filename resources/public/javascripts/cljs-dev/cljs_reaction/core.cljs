@@ -4,7 +4,8 @@
               [cljs.core.async :refer (chan put! <!)]
               [cljs-reaction.title :as reaction-title :refer (title)]
               [cljs-reaction.login-form :as reaction-login-form :refer (login-form)]
-              [cljs-reaction.article :as reaction-article :refer (article)]))
+              [cljs-reaction.article :as reaction-article :refer (article)]
+              [cljs-reaction.radio-button :as reaction-radio-button :refer (radio-button)]))
 
 (defn app []
     [:div {:class "reaction-wrapper"}
@@ -20,7 +21,13 @@
             [:h1 {} "This is a title for our article header"]
             [:div {}
                   [:p {} "This paragraph is an example of our article's body."]
-                  [:p {} "This is a second paragraph to illustrate a full article's body"]]]])
+                  [:p {} "This is a second paragraph to illustrate a full article's body"]]]
+
+        [:div {}
+              [radio-button "Radiobutton 1" 1]
+              [radio-button "Radiobutton 2" 2]
+              [radio-button "Radiobutton 3" 3]
+              [radio-button "Radiobutton 4" 4]]])
 
 (reagent/render [app]
     (js/document.querySelector "#cljs-target"))
