@@ -26,4 +26,5 @@ goog.addDependency("../cljs/core/async.js", ['cljs.core.async'], ['cljs.core.asy
 goog.addDependency("../cljs_reaction/text_field.js", ['cljs_reaction.text_field'], ['reagent.core', 'cljs.core', 'cljs.core.async']);
 goog.addDependency("../cljs_reaction/login_form.js", ['cljs_reaction.login_form'], ['reagent.core', 'cljs.core', 'cljs.core.async', 'cljs_reaction.text_field']);
 goog.addDependency("../cljs_reaction/title.js", ['cljs_reaction.title'], ['reagent.core', 'cljs.core', 'cljs.core.async']);
-goog.addDependency("../cljs_reaction/core.js", ['cljs_reaction.core'], ['cljs_reaction.login_form', 'reagent.core', 'cljs.core', 'cljs.core.async', 'cljs_reaction.title']);
+goog.addDependency("../cljs_reaction/article.js", ['cljs_reaction.article'], ['reagent.core', 'cljs.core', 'cljs.core.async']);
+goog.addDependency("../cljs_reaction/core.js", ['cljs_reaction.core'], ['cljs_reaction.login_form', 'reagent.core', 'cljs.core', 'cljs.core.async', 'cljs_reaction.title', 'cljs_reaction.article']);
