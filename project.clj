@@ -21,17 +21,16 @@
                             :pretty-print true
                             :source-map true
                         }}
-                        ;;{:id "production"
-                        ;; :source-paths ["src/cljs_reaction"]
-                        ;; :figwheel true
-                        ;; :compiler {
-                        ;;     :optimizations :advanced
-                        ;;     :output-to "resources/public/javascripts/production.js"
-                        ;;     :output-dir "resources/public/javascripts/cljs-production/"
-                        ;;     :pretty-print false
-                        ;;     :source-map true
-                        ;;  }}
-             ]}
+                        
+                        {:id "production"
+                         :source-paths ["src/cljs_reaction"]
+                         :figwheel true
+                         :compiler {
+                             :optimizations :advanced
+                             :output-to "resources/public/javascripts/production.js"
+                             :output-dir "resources/public/javascripts/cljs-production/"
+                             :pretty-print false
+                             :source-map true}}]}
 
   :dependencies [[org.clojure/clojure "1.8.0"]
                  [org.clojure/clojurescript "1.9.227"]
