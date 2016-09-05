@@ -8,5 +8,6 @@
           [:label {:class "r-lbl-textfield"}
                   *label*]
           [:input {:class "r-text-textfield"
-                   :placeholder *placeholder*}
+                   :placeholder *placeholder*
+                   :type :text}
                   nil]])
